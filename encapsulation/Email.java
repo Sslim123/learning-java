@@ -17,6 +17,7 @@ class Email {
     String department;
     String emailAddress;
     String password;
+    String passwords;
     String mailboxAccount = "org.uk";
     String alternativeEmail;
     int capacity;
@@ -24,10 +25,13 @@ class Email {
     Email(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.department = getDeterment();
-        System.out.println("department is : " + this.department);
+
         this.password = getPasswordString(10);
         System.out.println(" the password is : " + password);
+        setNewPassword(passwords);
+        this.department = getDeterment();
+        System.out.println("department is : " + this.department);
+
         emailAddress = this.firstName + "" + this.lastName + "@" + department + "." + this.mailboxAccount;
         System.out.println(emailAddress);
     }
@@ -71,8 +75,21 @@ class Email {
         this.alternativeEmail = alternativeEmail;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setNewPassword(String passwords) {
+        System.out.println("inter your new pass word :");
+        Scanner scanner = new Scanner(System.in);
+        this.passwords = scanner.next();
+        if(scanner.next() ==  ""){
+    
+System.out.println("please inter your password");
+
+        }
+       // System.out.println(" your new password is :" + this.passwords);
+    }
+
+    String getNewPassword() {
+
+        return passwords;
     }
 
     int getMailboxCapacity() {
@@ -83,7 +100,4 @@ class Email {
         return alternativeEmail;
     }
 
-    String getPassword() {
-        return password;
-    }
 }
