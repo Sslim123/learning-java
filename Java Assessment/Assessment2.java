@@ -4,13 +4,14 @@ public class Assessment2 {
     public static void main(String[] args) {
          
         // splitArray();
-        castingJava();
-        long[] calculationsTime = { 23, 343, 200, 100, 80, 54, 123, 600, 400 };
-        Arrays.sort(calculationsTime);
-        System.out.println(calculationsTime);
-        for (long time : calculationsTime) {
+        // castingJava();
+        // long[] calculationsTime = { 23, 343, 200, 100, 80, 54, 123, 600, 400 };
+        // Arrays.sort(calculationsTime);
+        // System.out.println(calculationsTime);
+        // for (long time : calculationsTime) {
             // System.out.print(time + "ms " );
-        }
+       // }
+       testingArrays();
     }
 
     static void splitArray() {
@@ -68,5 +69,19 @@ public class Assessment2 {
         // b = 6;
         // c = (short) (a + b);
         // System.out.println(c);
+    }
+    static void testingArrays(){
+        int[] a = {1, 2, 3, 4, 5, 6};
+        int tall = 2;
+        int reverse = 0;
+        for (int i = 0; i < a.length; i++){
+            reverse = a[i];
+            if(reverse == 4){
+        
+                System.out.println("yes");
+            }
+            System.out.println(a[i]);
+
+        }
     }
 }
