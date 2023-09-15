@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="javaChallenges/inhritaceInJava/|Java Assessment/|javafor learing/" kind="src" path=""/>
+	<classpathentry kind="src" path="Java Assessment"/>
+	<classpathentry kind="src" path="javaChallenges/inhritaceInJava"/>
+	<classpathentry kind="src" path="javafor learing"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
